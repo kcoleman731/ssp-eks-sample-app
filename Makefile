@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PROJECT_SLUG := ssp-eks-sample-app
-IMAGE_REPO := Uncertain
+PROJECT_SLUG := ssp-sample-service
+IMAGE_REPO := public.ecr.aws/u3z0x8r3
 
 TS = $(shell date +%s)
 HEAD_REF = $(shell git rev-list HEAD --max-count=1 --abbrev-commit)

@@ -1,0 +1,9 @@
+make: Entering directory `/Users/kcaws/Desktop/aws/eks-ssp/ssp-eks-sample-app'
+echo "Building docker container..."
+docker build \
+	--cache-from=Uncertain/ssp-eks-sample-app:latest \
+	-t Uncertain/ssp-eks-sample-app:latest \
+	-t Uncertain/ssp-eks-sample-app:34e627c_1628827878 \
+	-f Dockerfile . 
+make: Leaving directory `/Users/kcaws/Desktop/aws/eks-ssp/ssp-eks-sample-app'
+ 
