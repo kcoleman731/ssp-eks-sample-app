@@ -36,7 +36,7 @@ jobs:
       - name: Update image tag
         uses: fjogeleit/yaml-update-action@master
         with:
-          valueFile: 'deployment.yaml'
+          valueFile: 'teams/team-riker/dev/guestbook-ui-deployment.yaml'
           propertyPath: 'spec.template.spec.containers[0].image'
           value: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           commitChange: true
