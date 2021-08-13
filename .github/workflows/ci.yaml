@@ -39,9 +39,8 @@ jobs:
           valueFile: 'teams/team-riker/dev/guestbook-ui-deployment.yaml'
           propertyPath: 'spec.template.spec.containers.0.image'
           value: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          repository: kcoleman731/ssp-eks-workloads
           commitChange: true
           message: 'Updating image tag.'
           updateFile: true
-          branch: deployment/update-tag
-          createPR: true
       
