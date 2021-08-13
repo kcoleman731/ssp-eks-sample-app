@@ -40,5 +40,8 @@ jobs:
           propertyPath: 'spec.template.spec.containers.0.image'
           value: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           commitChange: true
+          message: 'Updating image tag.'
           updateFile: true
+          branch: deployment/update-tag
+          createPR: true
       
