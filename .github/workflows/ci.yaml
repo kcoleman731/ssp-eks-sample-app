@@ -45,5 +45,4 @@ jobs:
           createPR: true
           message: 'Update Image Version to this'
           token: ${{ secrets.GITHUB_TOKEN }}
-          workDir: infrastructure
       
