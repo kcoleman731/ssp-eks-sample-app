@@ -40,9 +40,6 @@ jobs:
           propertyPath: 'spec.template.spec.containers.0.image'
           value: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           repository: kcoleman731/ssp-eks-workloads
-          branch: deployment/new-version
-          targetBranch: master
-          createPR: true
+          branch: master
           message: 'Update Image Version to this'
-          token: ${{ secrets.PERSONAL_GH_TOKEN }}
       
